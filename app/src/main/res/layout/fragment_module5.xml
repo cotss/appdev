@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenbg"
+    android:layout_marginTop="60dp">
+
+    <TextView
+        android:id="@+id/modNum"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Module 5"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aldrich"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chester G. Miranda"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/modNum"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/colorPickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/appbar"
+        android:onClick="changeBackgroundColor"
+        android:text="Pick Color"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linVM" />
+
+
+    <Button
+        android:id="@+id/revertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/appbar"
+        android:onClick="revertBackgroundColor"
+        android:text="Revert"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/colorPickerButton"
+        app:layout_constraintStart_toStartOf="@+id/colorPickerButton"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerButton" />
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BSCS-DS 3A"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linVM"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vision"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/visionvis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nLaguna University shall be a socially responsive educational institution of choice providing holistically developed individuals in the Asia-Pacific Region."
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/vision"
+                app:layout_constraintStart_toStartOf="@id/vision"
+                app:layout_constraintEnd_toEndOf="@id/vision"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MISSION"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                app:layout_constraintTop_toBottomOf="@id/visionvis"
+                app:layout_constraintStart_toStartOf="@id/vision"
+                app:layout_constraintEnd_toEndOf="@id/vision"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/missionmis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nLaguna University is committed to produce academically prepared and technically skilled individuals who are socially and morally upright."
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/mission"
+                app:layout_constraintStart_toStartOf="@id/mission"
+                app:layout_constraintEnd_toEndOf="@id/mission"
+                android:gravity="center"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

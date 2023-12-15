@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OptionMenuText">
+        <!-- Set the background color to green -->
+        <item name="android:background">@color/appbar</item>
+
+        <!-- Set the text color to white -->
+        <item name="android:textColor">@color/black</item>
+
+        <!-- Add other text appearance attributes if needed -->
+
+    </style>
+
+</resources>

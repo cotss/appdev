@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        app:itemTextAppearance="@style/OptionMenuText" />
+    <item
+        android:id="@+id/menu_module5"
+        android:title="Module 5"
+        app:itemTextAppearance="@style/OptionMenuText"/>
+    <item
+        android:id="@+id/menu_module8"
+        android:title="Module 8"
+        app:itemTextAppearance="@style/OptionMenuText" />
+</menu>
